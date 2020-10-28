@@ -25,5 +25,7 @@ Project Dependly thirdpart:
 
 
 
-/usr/local/opt/boost1.69/
-include  lib
+ 
+
+
+ 
