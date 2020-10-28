@@ -1,0 +1,903 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ProcessAnalysisForms</class>
+ <widget class="QDialog" name="ProcessAnalysisForms">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>859</width>
+    <height>673</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="widgetBottomDynamic" native="true">
+     <layout class="QGridLayout" name="gridLayout">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <property name="horizontalSpacing">
+       <number>0</number>
+      </property>
+      <property name="verticalSpacing">
+       <number>10</number>
+      </property>
+      <item row="0" column="0">
+       <widget class="QWidget" name="widget" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>105</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="leftMargin">
+          <number>30</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>30</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QWidget" name="widgetNavigationDynamic" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <property name="spacing">
+             <number>12</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QToolButton" name="btnProcessInfo">
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>90</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>105</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>当前进程</string>
+              </property>
+              <property name="icon">
+               <iconset resource="../source.qrc">
+                <normaloff>:/image/process_check_orange.png</normaloff>:/image/process_check_orange.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>70</width>
+                <height>70</height>
+               </size>
+              </property>
+              <property name="checkable">
+               <bool>true</bool>
+              </property>
+              <property name="checked">
+               <bool>true</bool>
+              </property>
+              <property name="autoExclusive">
+               <bool>true</bool>
+              </property>
+              <property name="toolButtonStyle">
+               <enum>Qt::ToolButtonTextUnderIcon</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QToolButton" name="btnHistoryPorcess">
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>90</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>105</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>历史进程</string>
+              </property>
+              <property name="icon">
+               <iconset resource="../source.qrc">
+                <normaloff>:/image/history_normal.png</normaloff>:/image/history_normal.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>70</width>
+                <height>70</height>
+               </size>
+              </property>
+              <property name="checkable">
+               <bool>true</bool>
+              </property>
+              <property name="checked">
+               <bool>false</bool>
+              </property>
+              <property name="autoExclusive">
+               <bool>true</bool>
+              </property>
+              <property name="toolButtonStyle">
+               <enum>Qt::ToolButtonTextUnderIcon</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QToolButton" name="btnSelfStart">
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>90</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>105</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>自启动</string>
+              </property>
+              <property name="icon">
+               <iconset resource="../source.qrc">
+                <normaloff>:/image/auto_normal.png</normaloff>:/image/auto_normal.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>70</width>
+                <height>70</height>
+               </size>
+              </property>
+              <property name="checkable">
+               <bool>true</bool>
+              </property>
+              <property name="autoExclusive">
+               <bool>true</bool>
+              </property>
+              <property name="toolButtonStyle">
+               <enum>Qt::ToolButtonTextUnderIcon</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QToolButton" name="btnMessageHook">
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>90</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>105</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>消息钩子</string>
+              </property>
+              <property name="icon">
+               <iconset resource="../source.qrc">
+                <normaloff>:/image/hook_normal.png</normaloff>:/image/hook_normal.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>70</width>
+                <height>70</height>
+               </size>
+              </property>
+              <property name="checkable">
+               <bool>true</bool>
+              </property>
+              <property name="autoExclusive">
+               <bool>true</bool>
+              </property>
+              <property name="toolButtonStyle">
+               <enum>Qt::ToolButtonTextUnderIcon</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QToolButton" name="btnPortInfo">
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>90</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>105</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>端口信息</string>
+              </property>
+              <property name="icon">
+               <iconset resource="../source.qrc">
+                <normaloff>:/image/port_normal.png</normaloff>:/image/port_normal.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>70</width>
+                <height>70</height>
+               </size>
+              </property>
+              <property name="checkable">
+               <bool>true</bool>
+              </property>
+              <property name="autoExclusive">
+               <bool>true</bool>
+              </property>
+              <property name="toolButtonStyle">
+               <enum>Qt::ToolButtonTextUnderIcon</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QToolButton" name="btnIATInfo">
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>90</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>105</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>IAT信息</string>
+              </property>
+              <property name="icon">
+               <iconset resource="../source.qrc">
+                <normaloff>:/image/iat_normal.png</normaloff>:/image/iat_normal.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>70</width>
+                <height>70</height>
+               </size>
+              </property>
+              <property name="checkable">
+               <bool>true</bool>
+              </property>
+              <property name="autoExclusive">
+               <bool>true</bool>
+              </property>
+              <property name="toolButtonStyle">
+               <enum>Qt::ToolButtonTextUnderIcon</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QStackedWidget" name="stackedWidget">
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="page">
+         <layout class="QGridLayout" name="gridLayout_2">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QScrollArea" name="scrollArea">
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="scrollAreaWidgetContents_3">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>857</width>
+               <height>556</height>
+              </rect>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_4">
+              <property name="leftMargin">
+               <number>8</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>8</number>
+              </property>
+              <property name="bottomMargin">
+               <number>8</number>
+              </property>
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <item row="0" column="0">
+               <widget class="QTableWidget" name="tableWidgetProcessInfo">
+                <column>
+                 <property name="text">
+                  <string>进程名</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>进程ID</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>父进程ID</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>隐藏</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>认证</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>完整路径</string>
+                 </property>
+                </column>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="page_2">
+         <layout class="QGridLayout" name="gridLayout_3">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QScrollArea" name="scrollArea_2">
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="scrollAreaWidgetContents_4">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>857</width>
+               <height>556</height>
+              </rect>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_5">
+              <property name="leftMargin">
+               <number>8</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>8</number>
+              </property>
+              <property name="bottomMargin">
+               <number>8</number>
+              </property>
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <item row="0" column="0">
+               <widget class="QTableWidget" name="tableWidgetSelfStart">
+                <column>
+                 <property name="text">
+                  <string>运行项目</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>注册表路径</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>模块路径</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>认证</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>发行商</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>描述</string>
+                 </property>
+                </column>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="page_3">
+         <layout class="QGridLayout" name="gridLayout_6">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QScrollArea" name="scrollArea_3">
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="scrollAreaWidgetContents">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>86</width>
+               <height>78</height>
+              </rect>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_9">
+              <property name="leftMargin">
+               <number>8</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>8</number>
+              </property>
+              <property name="bottomMargin">
+               <number>8</number>
+              </property>
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <item row="0" column="0">
+               <widget class="QTableWidget" name="tableWidgetMessageHook">
+                <column>
+                 <property name="text">
+                  <string>句柄</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>钩子类型</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>钩子函数地址</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>进程ID</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>线程ID</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>钩子模块</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>申请此钩子的进程路径</string>
+                 </property>
+                </column>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="page_4">
+         <layout class="QGridLayout" name="gridLayout_7">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QScrollArea" name="scrollArea_4">
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="scrollAreaWidgetContents_2">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>86</width>
+               <height>78</height>
+              </rect>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_10">
+              <property name="leftMargin">
+               <number>8</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>8</number>
+              </property>
+              <property name="bottomMargin">
+               <number>8</number>
+              </property>
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <item row="0" column="0">
+               <widget class="QTableWidget" name="tableWidgetPortInfo">
+                <column>
+                 <property name="text">
+                  <string>协议</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>本机地址</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>远程地址</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>状态</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>进程PID</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>进程路径</string>
+                 </property>
+                </column>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="page_5">
+         <layout class="QGridLayout" name="gridLayout_8">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QScrollArea" name="scrollArea_5">
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="scrollAreaWidgetContents_5">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>86</width>
+               <height>78</height>
+              </rect>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_11">
+              <property name="leftMargin">
+               <number>8</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>8</number>
+              </property>
+              <property name="bottomMargin">
+               <number>8</number>
+              </property>
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <item row="0" column="0">
+               <widget class="QTableWidget" name="tableWidgetIATInfo">
+                <column>
+                 <property name="text">
+                  <string>进程</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>PID</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>原始地址</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>跳转地址</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Iat Hook函数</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Iat Hook模块</string>
+                 </property>
+                </column>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="page_6">
+         <layout class="QGridLayout" name="gridLayout_12">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QScrollArea" name="scrollArea_6">
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="scrollAreaWidgetContents_7">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>86</width>
+               <height>78</height>
+              </rect>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_14">
+              <property name="leftMargin">
+               <number>8</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>8</number>
+              </property>
+              <property name="bottomMargin">
+               <number>8</number>
+              </property>
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <item row="0" column="0">
+               <widget class="QTableWidget" name="tableWidgetProcessHistory">
+                <column>
+                 <property name="text">
+                  <string>进程名</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>进程ID</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>父进程ID</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>隐藏</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>认证</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>完整路径</string>
+                 </property>
+                </column>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../source.qrc"/>
+ </resources>
+ <connections/>
+</ui>

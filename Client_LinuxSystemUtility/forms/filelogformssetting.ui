@@ -1,0 +1,782 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FileLogFormsSetting</class>
+ <widget class="QDialog" name="FileLogFormsSetting">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>692</width>
+    <height>620</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>692</width>
+    <height>497</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QScrollArea" name="scrollArea">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>40</y>
+     <width>571</width>
+     <height>581</height>
+    </rect>
+   </property>
+   <property name="widgetResizable">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="scrollAreaWidgetContents">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>567</width>
+      <height>577</height>
+     </rect>
+    </property>
+    <widget class="QStackedWidget" name="stackedWidget">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>571</width>
+       <height>591</height>
+      </rect>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="page">
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>0</y>
+         <width>341</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>基本信息 :</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>210</y>
+         <width>561</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>    关键词设置:</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="widget" native="true">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>240</y>
+         <width>561</width>
+         <height>331</height>
+        </rect>
+       </property>
+       <widget class="QWidget" name="widget_2" native="true">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>531</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <widget class="QLabel" name="label_4">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>0</y>
+           <width>91</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>      名称:</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_5">
+         <property name="geometry">
+          <rect>
+           <x>420</x>
+           <y>0</y>
+           <width>81</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>操作:   </string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEditKeyWord">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>30</y>
+           <width>261</width>
+           <height>31</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="btnAddkeyWord">
+         <property name="geometry">
+          <rect>
+           <x>410</x>
+           <y>30</y>
+           <width>91</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>增加</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QTableWidget" name="tableWidgetKeyWord">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>90</y>
+          <width>551</width>
+          <height>241</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="widget_3" native="true">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>531</width>
+         <height>181</height>
+        </rect>
+       </property>
+       <widget class="QWidget" name="widgetCostomCheckPath" native="true">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>100</y>
+          <width>391</width>
+          <height>80</height>
+         </rect>
+        </property>
+        <widget class="QWidget" name="layoutWidget">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>0</y>
+           <width>201</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QCheckBox" name="checkBoxMyDocument">
+            <property name="text">
+             <string>home</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="checkBoxDesktop">
+            <property name="text">
+             <string>桌    面</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="layoutWidget">
+         <property name="geometry">
+          <rect>
+           <x>60</x>
+           <y>40</y>
+           <width>301</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <item>
+           <widget class="QLineEdit" name="lineEditCheckPath"/>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnAddPath">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>80</width>
+              <height>25</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>+</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>10</y>
+          <width>301</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="0" column="0">
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="QLabel" name="label_6">
+             <property name="text">
+              <string>任务名称:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEditTaskName"/>
+           </item>
+          </layout>
+         </item>
+         <item row="1" column="0">
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <widget class="QLabel" name="label_7">
+             <property name="text">
+              <string>任务类型:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="radioButtonAllParition">
+             <property name="text">
+              <string>home</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="radioButtonOther">
+             <property name="text">
+              <string>自定义</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_2">
+      <widget class="QWidget" name="widget_4" native="true">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>10</y>
+         <width>521</width>
+         <height>141</height>
+        </rect>
+       </property>
+       <widget class="QGroupBox" name="groupBoxOffice">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>521</width>
+          <height>141</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>办公软件:</string>
+        </property>
+        <widget class="QWidget" name="layoutWidget">
+         <property name="geometry">
+          <rect>
+           <x>22</x>
+           <y>44</y>
+           <width>461</width>
+           <height>89</height>
+          </rect>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_5">
+          <item row="0" column="0">
+           <widget class="QCheckBox" name="checkBoxDoc">
+            <property name="text">
+             <string>.doc</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QCheckBox" name="checkBoxDocx">
+            <property name="text">
+             <string>.docx</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QCheckBox" name="checkBoxXls">
+            <property name="text">
+             <string>.xls</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="3">
+           <widget class="QCheckBox" name="checkBoxXlsx">
+            <property name="text">
+             <string>.xlsx</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="4">
+           <widget class="QCheckBox" name="checkBoxPpt">
+            <property name="text">
+             <string>.ppt</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QCheckBox" name="checkBoxPptx">
+            <property name="text">
+             <string>.pptx</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QCheckBox" name="checkBoxPps">
+            <property name="text">
+             <string>.pps</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QCheckBox" name="checkBoxWps">
+            <property name="text">
+             <string>.wps</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="3">
+           <widget class="QCheckBox" name="checkBoxEt">
+            <property name="text">
+             <string>.et</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="4">
+           <widget class="QCheckBox" name="checkBoxDps">
+            <property name="text">
+             <string>.dps</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QCheckBox" name="checkBoxPdf">
+            <property name="text">
+             <string>.pdf</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QCheckBox" name="checkBoxRtf">
+            <property name="text">
+             <string>.rtf</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="2">
+           <widget class="QCheckBox" name="checkBoxAllOffice">
+            <property name="text">
+             <string>全选</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="widget_5" native="true">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>160</y>
+         <width>521</width>
+         <height>91</height>
+        </rect>
+       </property>
+       <widget class="QGroupBox" name="groupBoxWeb">
+        <property name="geometry">
+         <rect>
+          <x>-1</x>
+          <y>-1</y>
+          <width>521</width>
+          <height>91</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>网页:</string>
+        </property>
+        <widget class="QWidget" name="layoutWidget">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>30</y>
+           <width>461</width>
+           <height>60</height>
+          </rect>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="0" column="0">
+           <widget class="QCheckBox" name="checkBoxHtm">
+            <property name="text">
+             <string>.htm</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QCheckBox" name="checkBoxHtml">
+            <property name="text">
+             <string>.html</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QCheckBox" name="checkBoxMht">
+            <property name="text">
+             <string>.mht</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="3">
+           <widget class="QCheckBox" name="checkBoxXml">
+            <property name="text">
+             <string>.xml</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="4">
+           <widget class="QCheckBox" name="checkBoxTxt">
+            <property name="text">
+             <string>.txt</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QCheckBox" name="checkBoxAllWeb">
+            <property name="text">
+             <string>全选</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="widget_6" native="true">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>260</y>
+         <width>521</width>
+         <height>141</height>
+        </rect>
+       </property>
+       <widget class="QGroupBox" name="groupBoxCompress">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>521</width>
+          <height>131</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>压缩规则:</string>
+        </property>
+        <widget class="QWidget" name="layoutWidget">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>30</y>
+           <width>461</width>
+           <height>71</height>
+          </rect>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="0" column="0">
+           <widget class="QCheckBox" name="checkBoxRar">
+            <property name="text">
+             <string>.rar</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QCheckBox" name="checkBoxZip">
+            <property name="text">
+             <string>.zip</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QCheckBox" name="checkBox7z">
+            <property name="text">
+             <string>.7z</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="3">
+           <widget class="QCheckBox" name="checkBoxIso">
+            <property name="text">
+             <string>.iso</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="4">
+           <widget class="QCheckBox" name="checkBoxTar">
+            <property name="text">
+             <string>.tar</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QCheckBox" name="checkBoxBz2">
+            <property name="text">
+             <string>.bz2</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QCheckBox" name="checkBoxRar5">
+            <property name="text">
+             <string>.rar5</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QCheckBox" name="checkBoxAllCompress">
+            <property name="text">
+             <string>全选</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="widget_7" native="true">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>410</y>
+         <width>521</width>
+         <height>141</height>
+        </rect>
+       </property>
+       <widget class="QGroupBox" name="groupBoxphoto">
+        <property name="geometry">
+         <rect>
+          <x>-1</x>
+          <y>0</y>
+          <width>521</width>
+          <height>141</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>图片:</string>
+        </property>
+        <widget class="QWidget" name="layoutWidget">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>60</y>
+           <width>461</width>
+           <height>61</height>
+          </rect>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_4">
+          <item row="0" column="0">
+           <widget class="QCheckBox" name="checkBoxBmp">
+            <property name="text">
+             <string>.bmp</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QCheckBox" name="checkBoxJpg">
+            <property name="text">
+             <string>.jpg</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QCheckBox" name="checkBoxJpeg">
+            <property name="text">
+             <string>.jpeg</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="3">
+           <widget class="QCheckBox" name="checkBoxPng">
+            <property name="text">
+             <string>.png</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="4">
+           <widget class="QCheckBox" name="checkBoxDib">
+            <property name="text">
+             <string>.dib</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QCheckBox" name="checkBoxGif">
+            <property name="text">
+             <string>.gif</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QCheckBox" name="checkBoxTif">
+            <property name="text">
+             <string>.tif</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QCheckBox" name="checkBoxTiff">
+            <property name="text">
+             <string>.tiff</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="3">
+           <widget class="QCheckBox" name="checkBoxAllPhoto">
+            <property name="text">
+             <string>全选</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="btnSettingClose">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>0</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>保存</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>1</x>
+     <y>2</y>
+     <width>111</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>       配置中心</string>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="btnBasic">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>40</y>
+     <width>120</width>
+     <height>65</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>120</width>
+     <height>65</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>基本 </string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="autoExclusive">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="btnSenior">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>110</y>
+     <width>120</width>
+     <height>65</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>120</width>
+     <height>65</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>后缀</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="autoExclusive">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnSettingClose_2">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>0</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

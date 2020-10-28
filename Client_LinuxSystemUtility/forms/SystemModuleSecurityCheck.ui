@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SystemModuleSecurityCheck</class>
+ <widget class="QDialog" name="SystemModuleSecurityCheck">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>801</width>
+    <height>673</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>15</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="widgetBottomDynamic" native="true">
+     <layout class="QGridLayout" name="gridLayout">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <property name="horizontalSpacing">
+       <number>0</number>
+      </property>
+      <property name="verticalSpacing">
+       <number>10</number>
+      </property>
+      <item row="0" column="0">
+       <widget class="QWidget" name="widget" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>105</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="leftMargin">
+          <number>30</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>30</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QWidget" name="widgetNavigationDynamic" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <property name="spacing">
+             <number>12</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QToolButton" name="btnDriver">
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>105</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>SystemModule</string>
+              </property>
+              <property name="icon">
+               <iconset resource="../source.qrc">
+                <normaloff>:/image/dirver_check.png</normaloff>:/image/dirver_check.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>70</width>
+                <height>70</height>
+               </size>
+              </property>
+              <property name="checkable">
+               <bool>true</bool>
+              </property>
+              <property name="checked">
+               <bool>true</bool>
+              </property>
+              <property name="autoExclusive">
+               <bool>true</bool>
+              </property>
+              <property name="toolButtonStyle">
+               <enum>Qt::ToolButtonTextUnderIcon</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QToolButton" name="btnSSDT">
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>105</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>--</string>
+              </property>
+              <property name="icon">
+               <iconset resource="../source.qrc">
+                <normaloff>:/image/ssdt_normal.png</normaloff>:/image/ssdt_normal.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>70</width>
+                <height>70</height>
+               </size>
+              </property>
+              <property name="checkable">
+               <bool>true</bool>
+              </property>
+              <property name="autoExclusive">
+               <bool>true</bool>
+              </property>
+              <property name="toolButtonStyle">
+               <enum>Qt::ToolButtonTextUnderIcon</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QToolButton" name="btnShadowSSDT">
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>105</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>--</string>
+              </property>
+              <property name="icon">
+               <iconset resource="../source.qrc">
+                <normaloff>:/image/shadowsst_normal.png</normaloff>:/image/shadowsst_normal.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>70</width>
+                <height>70</height>
+               </size>
+              </property>
+              <property name="checkable">
+               <bool>true</bool>
+              </property>
+              <property name="autoExclusive">
+               <bool>true</bool>
+              </property>
+              <property name="toolButtonStyle">
+               <enum>Qt::ToolButtonTextUnderIcon</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QToolButton" name="btnIDT">
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>105</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>--</string>
+              </property>
+              <property name="icon">
+               <iconset resource="../source.qrc">
+                <normaloff>:/image/idt_normal.png</normaloff>:/image/idt_normal.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>70</width>
+                <height>70</height>
+               </size>
+              </property>
+              <property name="checkable">
+               <bool>true</bool>
+              </property>
+              <property name="autoExclusive">
+               <bool>true</bool>
+              </property>
+              <property name="toolButtonStyle">
+               <enum>Qt::ToolButtonTextUnderIcon</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="actSystemModuleScan_pushButton">
+           <property name="text">
+            <string>执行</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QStackedWidget" name="stackedWidget">
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="page">
+         <layout class="QGridLayout" name="gridLayout_2">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QScrollArea" name="scrollArea">
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="scrollAreaWidgetContents_3">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>782</width>
+               <height>554</height>
+              </rect>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_4">
+              <property name="leftMargin">
+               <number>8</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>8</number>
+              </property>
+              <property name="bottomMargin">
+               <number>8</number>
+              </property>
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <item row="0" column="0">
+               <widget class="QTableWidget" name="table_SystemModule_WidgetDriver">
+                <column>
+                 <property name="text">
+                  <string>模块名</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>占用内存大小</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>加载次数</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>依赖模块</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>模块状态</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>偏移模块</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>文件名</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>许可</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>作者</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>srcVersion</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Depends</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Intree</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Vermagic</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Sig_id</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Signer</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Sig_Key</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Sig_HashAlgo</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Signature</string>
+                 </property>
+                </column>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="page_2">
+         <layout class="QGridLayout" name="gridLayout_3">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QScrollArea" name="scrollArea_2">
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="scrollAreaWidgetContents_4">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>102</width>
+               <height>94</height>
+              </rect>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_5">
+              <property name="leftMargin">
+               <number>8</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>8</number>
+              </property>
+              <property name="bottomMargin">
+               <number>8</number>
+              </property>
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <item row="0" column="0">
+               <widget class="QTableWidget" name="tableWidgetSSDT">
+                <column>
+                 <property name="text">
+                  <string>序号</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>服务函数名称</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>原始地址</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>当前地址</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>当前服务函数所在模块</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Inline Hook跳转模块</string>
+                 </property>
+                </column>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="page_3">
+         <layout class="QGridLayout" name="gridLayout_6">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QScrollArea" name="scrollArea_3">
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="scrollAreaWidgetContents">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>102</width>
+               <height>94</height>
+              </rect>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_7">
+              <property name="leftMargin">
+               <number>8</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>8</number>
+              </property>
+              <property name="bottomMargin">
+               <number>8</number>
+              </property>
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <item row="0" column="0">
+               <widget class="QTableWidget" name="tableWidgetShadowSSDT">
+                <column>
+                 <property name="text">
+                  <string>序号</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>当前地址</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>所属模块</string>
+                 </property>
+                </column>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="page_4">
+         <layout class="QGridLayout" name="gridLayout_8">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QScrollArea" name="scrollArea_4">
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="scrollAreaWidgetContents_2">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>102</width>
+               <height>94</height>
+              </rect>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_9">
+              <property name="leftMargin">
+               <number>8</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>8</number>
+              </property>
+              <property name="bottomMargin">
+               <number>8</number>
+              </property>
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <item row="0" column="0">
+               <widget class="QTableWidget" name="tableWidgetIDT">
+                <column>
+                 <property name="text">
+                  <string>中断序号</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>当前地址</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>所属模块</string>
+                 </property>
+                </column>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../source.qrc"/>
+ </resources>
+ <connections/>
+</ui>

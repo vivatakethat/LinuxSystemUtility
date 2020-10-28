@@ -1,0 +1,32 @@
+CC= g++  
+ 
+#CFLAGS= -g -Wall -D __linux__  -std=c++11  
+CFLAGS= -ggdb -Wall -D __linux__  -std=c++11   -fPIC
+INCLUDE= -I./single_include -I./parted/include/ 
+  
+getsystem: convertjson.o sqlite3.o GetSysInfo.o
+	$(CC) $(CFLAGS) $(INCLUDE)  -o getsystem client.cpp   lshw.o -L. -llshw -lresolv  GetSysInfo.o  convertjson.o sqlite3.o -lpthread  libparted.so.2 -ldl 
+#	$(CC) $(CFLAGS) $(INCLUDE)  -o getsystem client.cpp GetSysInfo.cpp  convertjson.o sqlite3.o -lpthread -ldl -Wl,-rpath=./parted/lib/libparted.so.2.0.1
+	cp -a getsystem centos_Version
+	 
+GetSysInfo.o: GetSysInfo.cpp 
+	$(CC)  -c $(CFLAGS) $(INCLUDE) -o GetSysInfo.o GetSysInfo.cpp
+
+convertjson.o: ConvertJSON.cpp  
+	rm  -f getsystem *.o *.h.gch *hpp.gch
+	$(CC)  -c $(CFLAGS) $(INCLUDE) -o convertjson.o ConvertJSON.cpp  
+
+sqlite3.o: sqlite3.c 
+	gcc -c -fPIC sqlite3.c -o sqlite3.o -lpthread -ldl
+
+
+.PHONY:	clean
+clean:
+	rm  -f getsystem sqlite3.o  convertjson.o  GetSysInfo.o *.h.gch *hpp.gch
+
+
+
+
+
+# g++ -ggdb -Wall -std=c++11 -D __LINUX__ -std=c++11 -lmcheck -shared -fPIC -pthread   -I./single_include -I./parted/include/  -Xlinker --unresolved-symbols=ignore-in-shared-libs  -o libGetsystemInfo.so  GetSysInfo.cpp  ConvertJSON.cpp  sqlite3.o libparted.so.2  lshw.o -L. -llshw -lresolv  -ldl
+ 

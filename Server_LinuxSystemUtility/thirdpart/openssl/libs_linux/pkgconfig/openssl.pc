@@ -1,0 +1,9 @@
+prefix=/run/media/takethat/2t_t5/work/Work_Linux/openssl-1.0.2t/OutPut
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: OpenSSL
+Description: Secure Sockets Layer and cryptography libraries and tools
+Version: 1.0.2t
+Requires: libssl libcrypto

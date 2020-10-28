@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FileLogForms</class>
+ <widget class="QDialog" name="FileLogForms">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>834</width>
+    <height>567</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QWidget" name="widget_2" native="true">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>135</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>141</height>
+        </size>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="0" column="0">
+         <widget class="QWidget" name="widget" native="true">
+          <layout class="QGridLayout" name="gridLayout_4">
+           <item row="0" column="0">
+            <widget class="QToolButton" name="btnSetting">
+             <property name="minimumSize">
+              <size>
+               <width>100</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>100</width>
+               <height>105</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>设置</string>
+             </property>
+             <property name="icon">
+              <iconset resource="../source.qrc">
+               <normaloff>:/image/dirver_check.png</normaloff>:/image/dirver_check.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>70</width>
+               <height>70</height>
+              </size>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+             <property name="autoExclusive">
+              <bool>true</bool>
+             </property>
+             <property name="toolButtonStyle">
+              <enum>Qt::ToolButtonTextUnderIcon</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QToolButton" name="btnReportForm">
+             <property name="minimumSize">
+              <size>
+               <width>100</width>
+               <height>100</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>100</width>
+               <height>100</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>输出报表</string>
+             </property>
+             <property name="icon">
+              <iconset resource="../source.qrc">
+               <normaloff>:/image/reportform_normal.png</normaloff>:/image/reportform_normal.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>70</width>
+               <height>70</height>
+              </size>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+             <property name="autoRepeat">
+              <bool>false</bool>
+             </property>
+             <property name="autoExclusive">
+              <bool>true</bool>
+             </property>
+             <property name="toolButtonStyle">
+              <enum>Qt::ToolButtonTextUnderIcon</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QToolButton" name="btnStart">
+             <property name="minimumSize">
+              <size>
+               <width>100</width>
+               <height>100</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>100</width>
+               <height>105</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>检测结果</string>
+             </property>
+             <property name="icon">
+              <iconset resource="../source.qrc">
+               <normaloff>:/image/result_detect_normal.png</normaloff>:/image/result_detect_normal.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>70</width>
+               <height>70</height>
+              </size>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+             <property name="autoRepeat">
+              <bool>false</bool>
+             </property>
+             <property name="autoExclusive">
+              <bool>true</bool>
+             </property>
+             <property name="toolButtonStyle">
+              <enum>Qt::ToolButtonTextUnderIcon</enum>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QWidget" name="widgetShadow" native="true">
+       <layout class="QGridLayout" name="gridLayout_5">
+        <item row="0" column="0">
+         <widget class="QTableWidget" name="tableWidget">
+          <column>
+           <property name="text">
+            <string>文件名 </string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>扫描结果</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>关键字 </string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>详情</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../source.qrc"/>
+ </resources>
+ <connections/>
+</ui>
